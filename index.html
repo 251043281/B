@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="generator" content="pandoc">
-  <title>Material Engineering Presentation</title>
+  <title>Empty Presentation</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -24,6 +24,7 @@
       margin: 0 0.8em 0.2em -1.6em;
       vertical-align: middle;
     }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
   </style>
   <link rel="stylesheet" href="https://unpkg.com/reveal.js@4/dist/theme/serif.css" id="theme">
 </head>
@@ -32,53 +33,11 @@
     <div class="slides">
 
 <section id="title-slide">
-  <h1 class="title">Material Engineering Presentation</h1>
+  <h1 class="title">Empty Presentation</h1>
 </section>
 
-<section id="presentation-title" class="slide level1">
-<h1>Presentation Title</h1>
-<div style="text-align: center; margin-top: 50px;">
-<p><img data-src="https://www.unimap.edu.my/images/logo/logo_unimap.png"
-width="300" /></p>
-<p><strong>Name:</strong> Yip Jia Xin <strong>Matric No:</strong>
-251043281 <strong>Programme:</strong> UR6527001 Material Engineering</p>
-</div>
-</section>
-<section id="machine-1-temperature-effects" class="slide level1">
-<h1>Machine 1: Temperature Effects</h1>
-<div class="columns">
-<div class="column" style="width:50%;">
-<h3 id="statistical-significance">Statistical Significance</h3>
-<ul>
-<li><strong>p-value</strong>: 0.0000</li>
-<li>Analysis indicates that varying the temperature has a statistically
-significant impact on product resistance.</li>
-<li>The resistance remains stable and well below the USL of 10 across
-measured levels.</li>
-</ul>
-</div><div class="column" style="width:50%;">
-<iframe data-src="media/plots/temp_res.html?v=1782924246" width="100%" height="500px" style="border:none;">
-</iframe>
-</div>
-</div>
-</section>
-<section id="machine-1-pressure-effects" class="slide level1">
-<h1>Machine 1: Pressure Effects</h1>
-<div class="columns">
-<div class="column" style="width:50%;">
-<h3 id="statistical-significance-1">Statistical Significance</h3>
-<ul>
-<li><strong>p-value</strong>: 0.0000</li>
-<li>Pressure is a critical factor in determining the final resistance of
-the product.</li>
-<li>Lower resistance levels (which are preferred) are consistently
-achieved under the tested pressure ranges.</li>
-</ul>
-</div><div class="column" style="width:50%;">
-<iframe data-src="media/plots/press_res.html?v=1782924246" width="100%" height="500px" style="border:none;">
-</iframe>
-</div>
-</div>
+<section class="slide level6">
+
 </section>
     </div>
   </div>
@@ -89,7 +48,6 @@ achieved under the tested pressure ranges.</li>
   <script src="https://unpkg.com/reveal.js@4/plugin/notes/notes.js"></script>
   <script src="https://unpkg.com/reveal.js@4/plugin/search/search.js"></script>
   <script src="https://unpkg.com/reveal.js@4/plugin/zoom/zoom.js"></script>
-  <script src="https://unpkg.com/reveal.js@4/plugin/math/math.js"></script>
 
   <script>
 
@@ -219,7 +177,7 @@ achieved under the tested pressure ranges.</li>
         previewLinks: false,
 
         // Transition style (none/fade/slide/convex/concave/zoom)
-        transition: 'none',
+        transition: 'slide',
 
         // Transition speed (default/fast/slow)
         transitionSpeed: 'default',
@@ -236,34 +194,8 @@ achieved under the tested pressure ranges.</li>
         // viewDistance in order to save resources.
         mobileViewDistance: 2,
 
-        // The "normal" size of the presentation, aspect ratio will be preserved
-        // when the presentation is scaled to fit different resolutions. Can be
-        // specified using percentage units.
-        width: "90%",
-
-        // Factor of the display size that should remain empty around the content
-        margin: 0.1,
-
-        math: {
-          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js',
-          config: 'TeX-AMS_HTML-full',
-          tex2jax: {
-            inlineMath: [['\\(','\\)']],
-            displayMath: [['\\[','\\]']],
-            balanceBraces: true,
-            processEscapes: false,
-            processRefs: true,
-            processEnvironments: true,
-            preview: 'TeX',
-            skipTags: ['script','noscript','style','textarea','pre','code'],
-            ignoreClass: 'tex2jax_ignore',
-            processClass: 'tex2jax_process'
-          },
-        },
-
         // reveal.js plugins
         plugins: [
-          RevealMath,
           RevealNotes,
           RevealSearch,
           RevealZoom
