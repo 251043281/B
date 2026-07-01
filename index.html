@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="generator" content="pandoc">
-  <title>Empty Presentation</title>
+  <title>Material Engineering Presentation</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -24,16 +24,15 @@
       margin: 0 0.8em 0.2em -1.6em;
       vertical-align: middle;
     }
-    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
   </style>
-  <link rel="stylesheet" href="https://unpkg.com/reveal.js@4/dist/theme/serif.css" id="theme">
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js@4/dist/theme/"serif".css" id="theme">
 </head>
 <body>
   <div class="reveal">
     <div class="slides">
 
 <section id="title-slide">
-  <h1 class="title">Empty Presentation</h1>
+  <h1 class="title">Material Engineering Presentation</h1>
 </section>
 
 <section class="slide level6">
@@ -48,6 +47,7 @@
   <script src="https://unpkg.com/reveal.js@4/plugin/notes/notes.js"></script>
   <script src="https://unpkg.com/reveal.js@4/plugin/search/search.js"></script>
   <script src="https://unpkg.com/reveal.js@4/plugin/zoom/zoom.js"></script>
+  <script src="https://unpkg.com/reveal.js@4/plugin/math/math.js"></script>
 
   <script>
 
@@ -177,7 +177,7 @@
         previewLinks: false,
 
         // Transition style (none/fade/slide/convex/concave/zoom)
-        transition: 'slide',
+        transition: 'none',
 
         // Transition speed (default/fast/slow)
         transitionSpeed: 'default',
@@ -194,8 +194,34 @@
         // viewDistance in order to save resources.
         mobileViewDistance: 2,
 
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: \"90%\",
+
+        // Factor of the display size that should remain empty around the content
+        margin: 0.1,
+
+        math: {
+          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js',
+          config: 'TeX-AMS_HTML-full',
+          tex2jax: {
+            inlineMath: [['\\(','\\)']],
+            displayMath: [['\\[','\\]']],
+            balanceBraces: true,
+            processEscapes: false,
+            processRefs: true,
+            processEnvironments: true,
+            preview: 'TeX',
+            skipTags: ['script','noscript','style','textarea','pre','code'],
+            ignoreClass: 'tex2jax_ignore',
+            processClass: 'tex2jax_process'
+          },
+        },
+
         // reveal.js plugins
         plugins: [
+          RevealMath,
           RevealNotes,
           RevealSearch,
           RevealZoom
