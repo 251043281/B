@@ -21,7 +21,7 @@
 :::
 
 ::: {.column width="50%"}
-<iframe data-src='media/plots/temp_res.html?v=1782923855' width='100%' height='500px' style='border:none;'></iframe>
+<iframe data-src='media/plots/temp_res.html?v=1782924003' width='100%' height='500px' style='border:none;'></iframe>
 :::
 :::::
 
@@ -36,6 +36,6 @@
 :::
 
 ::: {.column width="50%"}
-<iframe data-src='media/plots/press_res.html?v=1782923855' width='100%' height='500px' style='border:none;'></iframe>
+<iframe data-src='media/plots/press_res.html?v=1782924003' width='100%' height='500px' style='border:none;'></iframe>
 :::
 :::::
