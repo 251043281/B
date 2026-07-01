@@ -25,7 +25,7 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="https://unpkg.com/reveal.js@4/dist/theme/"serif".css" id="theme">
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js@4/dist/theme/serif.css" id="theme">
 </head>
 <body>
   <div class="reveal">
@@ -35,8 +35,50 @@
   <h1 class="title">Material Engineering Presentation</h1>
 </section>
 
-<section class="slide level6">
-
+<section id="presentation-title" class="slide level1">
+<h1>Presentation Title</h1>
+<div style="text-align: center; margin-top: 50px;">
+<p><img data-src="https://www.unimap.edu.my/images/logo/logo_unimap.png"
+width="300" /></p>
+<p><strong>Name:</strong> Yip Jia Xin <strong>Matric No:</strong>
+251043281 <strong>Programme:</strong> UR6527001 Material Engineering</p>
+</div>
+</section>
+<section id="machine-1-temperature-effects" class="slide level1">
+<h1>Machine 1: Temperature Effects</h1>
+<div class="columns">
+<div class="column" style="width:50%;">
+<h3 id="statistical-significance">Statistical Significance</h3>
+<ul>
+<li><strong>p-value</strong>: 0.0000</li>
+<li>Analysis indicates that varying the temperature has a statistically
+significant impact on product resistance.</li>
+<li>The resistance remains stable and well below the USL of 10 across
+measured levels.</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<iframe data-src="media/plots/temp_res.html?v=1782924246" width="100%" height="500px" style="border:none;">
+</iframe>
+</div>
+</div>
+</section>
+<section id="machine-1-pressure-effects" class="slide level1">
+<h1>Machine 1: Pressure Effects</h1>
+<div class="columns">
+<div class="column" style="width:50%;">
+<h3 id="statistical-significance-1">Statistical Significance</h3>
+<ul>
+<li><strong>p-value</strong>: 0.0000</li>
+<li>Pressure is a critical factor in determining the final resistance of
+the product.</li>
+<li>Lower resistance levels (which are preferred) are consistently
+achieved under the tested pressure ranges.</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<iframe data-src="media/plots/press_res.html?v=1782924246" width="100%" height="500px" style="border:none;">
+</iframe>
+</div>
+</div>
 </section>
     </div>
   </div>
@@ -197,7 +239,7 @@
         // The "normal" size of the presentation, aspect ratio will be preserved
         // when the presentation is scaled to fit different resolutions. Can be
         // specified using percentage units.
-        width: \"90%\",
+        width: "90%",
 
         // Factor of the display size that should remain empty around the content
         margin: 0.1,
